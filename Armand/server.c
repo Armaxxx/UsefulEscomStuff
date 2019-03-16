@@ -1,12 +1,16 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <stdio.h>
-#include <netinet/in.h>
+#include <netinet/ip.h>
 #include <netdb.h>
+#include <strings.h>
+#include <arpa/inet.h>
+#include <unistd.h>
 
-int puerto = 7200<
+int puerto = 7200;
 
 int main(void){
+    char *aux;
     int num[2];
     int s, res, clilen;
     struct sockaddr_in server_addr, msg_to_client_addr;
@@ -53,7 +57,7 @@ int main(void){
 
     while(1){
         recvfrom(s, (char *) num, 2*sizeof(int), 0, (struct sockaddr *) &msg_to_client_addr, &clilen);
-        /*Para recivir datos en una conexion de tipo datagrama se utiliza:
+        /*Para recibir datos en una conexion de tipo datagrama se utiliza:
         int recvfrom(int socket, char *mensaje, int len, int flags, struct sockaddr *dir, int *long);
         len representa el maximo numero de bytes que se pueden escribir
         en la memoria referenciada por mensaje. El miembro flags se inicializa con 0, dir
@@ -66,7 +70,13 @@ int main(void){
         }
         La funcion retorna el numero de bytes leidos.*/
 
+        memcpy(aux, &msg_to_client_addr.sin_addr.s_addr, 4);  
+        printf("Ip del cliente: %d %d %d %d\n",aux[0],aux[1],aux[2],aux[3]);      
+        
+        printf("Puerto cliente: %d\n", ntohs(msg_to_client_addr.sin_port));
+
         res = num[0] + num[1];
+        
 
         /*Envia la peticion al cliente. La estructura msg_to_client_addr contiene la direccion del socket cliente*/
 
