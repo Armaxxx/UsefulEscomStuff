@@ -29,8 +29,8 @@ int SocketDatagrama::recibe(PaqueteDatagrama &p){
         unsigned int tam = sizeof(direccionForanea);
         i = recvfrom(s, (char *) num, p.obtieneLongitud()*sizeof(char), 0, (struct sockaddr *)&direccionForanea, &tam);
         cout << "Enviado Por: " << inet_ntoa(direccionForanea.sin_addr) << ": "<< ntohs(direccionForanea.sin_port) << endl;
-        envia(p);
     }
+    return i;
 }
 
 int SocketDatagrama::envia(PaqueteDatagrama &p){

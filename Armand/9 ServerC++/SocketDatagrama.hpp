@@ -10,7 +10,6 @@ private:
     int s; //ID socket
 public:
     SocketDatagrama(int);
-    ~SocketDatagrama();
     //Recibe un paquete tipo datagrama proveniente de este socket
     int recibe(PaqueteDatagrama &p);
     //Envia un paquete tipo datagrama desde este socket
