@@ -3,8 +3,9 @@
 #include "PaqueteDatagrama.hpp"
 using namespace std;
 
-PaqueteDatagrama::PaqueteDatagrama(char *dat, unsigned int len, char *addr , int port):datos(dat),longitud(len),puerto(port){
-    memcpy(ip,addr,sizeof(ip));
+PaqueteDatagrama::PaqueteDatagrama(char *dat, unsigned int len, char *addr , int port):longitud(len),puerto(port){
+    memcpy(datos,dat,sizeof(dat));
+    memcpy(ip,addr,sizeof(addr));
 }
 PaqueteDatagrama::PaqueteDatagrama(unsigned int len):longitud(len){
     datos = (char *)malloc(len*sizeof(char));
@@ -31,7 +32,7 @@ void PaqueteDatagrama::inicializaDatos(char *data){
 }
 
 void PaqueteDatagrama::inicializaIp(char *addr){
-    memcpy(ip,addr,sizeof(ip));
+    memcpy(ip,addr,sizeof(addr));
 }
 
 void PaqueteDatagrama::inicializaPuerto(int port){
