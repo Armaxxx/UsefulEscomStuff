@@ -23,7 +23,7 @@ int main(void)
    cout << "Enviando Mensaje" << endl;
    clientAddr.envia(msgtoserver);
    cout << "Mensaje Enviado" << endl;
-   sleep(2);
+   
    cout << "Esperando RESPUESTA DEL SERVER" << endl;
    clientAddr.recibe(msgtoserver);
    cout << "Mensaje recibido: " << msgtoserver.obtieneDatos() << endl;

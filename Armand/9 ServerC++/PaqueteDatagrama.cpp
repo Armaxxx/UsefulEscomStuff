@@ -4,8 +4,9 @@
 using namespace std;
 
 PaqueteDatagrama::PaqueteDatagrama(char *dat, unsigned int len, char *addr , int port):longitud(len),puerto(port){
+    datos = (char*)malloc(sizeof(dat[0])*len);
     memcpy(datos,dat,len);
-    memcpy(ip,addr,sizeof(ip));
+    strcpy(ip,addr);
     cout << "\tMensaje creado para:\n\t\tip: " << ip << "\n\t\tPuerto: " << puerto << "\n\t\tDatos: " << datos << endl;
 }
 PaqueteDatagrama::PaqueteDatagrama(unsigned int len):longitud(len){
@@ -29,11 +30,11 @@ char *PaqueteDatagrama::obtieneDatos(){
 }
 
 void PaqueteDatagrama::inicializaDatos(char *data){
-    memcpy(datos,data,sizeof(data));
+    memcpy(datos,data,longitud);
 }
 
 void PaqueteDatagrama::inicializaIp(char *addr){
-    memcpy(ip,addr,sizeof(addr));
+    strcpy(ip,addr);
 }
 
 void PaqueteDatagrama::inicializaPuerto(int port){
