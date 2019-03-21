@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string.h>
 #include <unistd.h>
+#include <vector>
 #include "SocketDatagrama.hpp"
 #include "PaqueteDatagrama.hpp"
 using namespace std;
@@ -18,8 +19,22 @@ int main(void)
    incremento = num[0]/3;
    num[1] = 2;
    num[2] = incremento;
+   vector<PaqueteDatagrama> msgstoserver;
+   PaqueteDatagrama *msgtoserver;
+   msgtoserver = new PaqueteDatagrama((char*)num,3,ip,puerto);
+   msgstoserver.push_back(*msgtoserver);
 
-   PaqueteDatagrama msgtoserver((char*)num,3,ip,puerto);
+   num[1] = num[2];
+   num[2] += incremento;
+
+   msgtoserver = new PaqueteDatagrama((char*)num,3,ip,puerto);
+   msgstoserver.push_back(*msgtoserver);
+
+   num[1] = num[2];
+   num[2] += incremento;
+
+   msgtoserver = new PaqueteDatagrama((char*)num,3,ip,puerto);
+   msgstoserver.push_back(*msgtoserver);
    while(true){
       clientAddr.envia(msgtoserver);
       num[1] = num[2]+1;
