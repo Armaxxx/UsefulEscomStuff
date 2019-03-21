@@ -1,3 +1,5 @@
+#include <iostream>
+#include <string.h>
 #ifndef PAQUETEDATAGRAMA_HPP_
 #define PAQUETEDATAGRAMA_HPP_
 

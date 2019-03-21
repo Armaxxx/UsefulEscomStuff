@@ -1,16 +1,14 @@
-#include <iostream>
-#include <string.h>
 #include "PaqueteDatagrama.hpp"
 using namespace std;
 
 PaqueteDatagrama::PaqueteDatagrama(char *dat, unsigned int len, char *addr , int port):longitud(len),puerto(port){
-    datos = (char*)malloc(sizeof(dat[0])*len);
+    datos = new char[len];
     memcpy(datos,dat,len);
     strcpy(ip,addr);
     cout << "\tMensaje creado para:\n\t\tip: " << ip << "\n\t\tPuerto: " << puerto << "\n\t\tDatos: " << datos << endl;
 }
 PaqueteDatagrama::PaqueteDatagrama(unsigned int len):longitud(len){
-    datos = (char *)malloc(len*sizeof(char));
+    datos = new char[len];
 }
 
 char *PaqueteDatagrama::obtieneDireccion(){

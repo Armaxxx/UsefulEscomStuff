@@ -1,14 +1,5 @@
-#include "PaqueteDatagrama.hpp"
 #include "SocketDatagrama.hpp"
-#include <strings.h>
-#include <iostream>
-#include <sys/socket.h>
-#include <sys/types.h>
-#include <netinet/in.h>
-#include <netinet/ip.h>
-#include <netdb.h>
-#include <arpa/inet.h>
-#include <unistd.h>
+
 using namespace std;
 
 SocketDatagrama::SocketDatagrama(int puerto){

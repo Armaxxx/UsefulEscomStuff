@@ -1,4 +1,12 @@
+#include <strings.h>
+#include <iostream>
+#include <sys/socket.h>
+#include <sys/types.h>
 #include <netinet/in.h>
+#include <netinet/ip.h>
+#include <netdb.h>
+#include <arpa/inet.h>
+#include <unistd.h>
 #include "PaqueteDatagrama.hpp"
 #ifndef SOCKETDATAGRAMA_HPP_
 #define SOCKETDATAGRAMA_HPP_
