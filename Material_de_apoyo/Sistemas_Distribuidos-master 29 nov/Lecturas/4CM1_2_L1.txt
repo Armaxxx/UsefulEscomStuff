@@ -1,0 +1,29 @@
+Cuando una computadora (conectada a una red) presenta una falla, ¿Qué ocurre con las demás computadoras de dicha red?
+Siguen trabajando sin problemas
+Dejan de trabajar todas las computadoras
+Siguen trabajando pero con pequeñas fallas
+Las computadoras se distribuyen el trabajo de la computadora con fallas 
+
+¿Cuál es la principal motivación para construir y usar sistemas distribuidos?
+Compartir recursos
+Optimizar uso del procesador
+Optimizar memoria
+Tener respaldos de la información
+
+Cuando se dice que un sistema conserva su efectividad al ocurrir un incremento significativo en el numero de recursos y el número de usuarios, se hace referencia al término:
+Escalabilidad
+Integridad
+Disponibilidad
+Seguridad
+
+Este tipo de ataque ocurre cuando un usuario desea obstaculizar un servicio por alguna razón y este se obtiene al bombardear el servicio con un numero suficiente de peticiones inútiles de modo que los usuarios serios sean incapaces de utilizarlo.
+Denegación de servicio
+Smurf
+Código móvil
+Inundación UDP
+
+Es el encargado de convertir los fallos de redes y procesos en excepciones a nivel de programación.
+Middleware
+Servidor de aplicaciones
+Código móvil
+Servicio web

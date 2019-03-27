@@ -1,0 +1,29 @@
+Interfaz de programación de aplicaciones de Java para la comunicación entre procesos en internet.
+API
+IDE
+Framework
+Librería
+
+Cuando la comunicación entre procesos el emisor y receptor se sincronizan con cada mensaje, y envía y recibe son operaciones bloqueantes, se dice que es de tipo:
+Síncrona
+Asíncrona
+Ambas
+Ninguna
+
+Proporciona identificadores para los destinos de los mensajes independientes de la localización, haciéndoles corresponder con direcciones de más bajo nivel utilizadas para entregar los mensajes en los puertos, permitiendo tanto la migración como la reubicación de los servicios en otro lugar.
+Sistema Operativo
+Programas cliente
+API
+Puerto local
+
+En este protocolo, la interfaz de programación de aplicaciones proporciona la abstracción de un flujo de bytes en el que pueden escribirse y desde el que pueden leerse datos. 
+TCP
+UDP 
+FTP
+SMTP
+
+En este protocolo, en la comunicación mediante datagramas, el proceso receptor necesita especificar una cadena de bytes de un tamaño concreto sobre el cual se almacenará el mensaje recibido.
+UDP
+TCP
+FTP
+SMTP

@@ -1,0 +1,73 @@
+Lectura 5: Invocación remota//5, 5.1, 5.2
+
+Las 2 mas prominentes técnicas de invocación remota para la comunicación en sistemas distribuidos:
+
+	Llamada a procedimiento remoto (RPC) extiende la abstracción común de programación de la llamada al procedimiento a ambientes distribuidos. permitiendo un proceso de llamada para llamar a un procedimiento en un nodo remoto si este es local.
+
+	Invocación a métodos remotos (RMI) es similar a RPC pero para objetos distribuidos, con beneficios añadidos en términos del uso de conceptos de POO en sistemas distribuidos y extiende el concepto de referencia objetos para ambientes globales distribuidos y permite el uso de referencias a objetos como parámetros en invocacines remotas.
+
+5.1 Introducción
+
+El capítulo se centra en cómo los procesos (o entidades como objetos y servicios) se comunican en un sistema distribuido. Examinando los paradigmas de invocación remota:
+	Protocolos de solicitud-respuesta representan un patrón de paso de mensajes y soporte a ambas formas de intercambio de mensajes en cómputo cliente-servidor. En particular, protocolos que proveen bajos niveles de soporte de solicitudes de ejecución de operación remota y proveen soporte directo par RPC y RMI.
+	El ejemplo más conocido de un modelo amistoso de programación fue la extensión de un modelo convencional de procedimiento de llamadas para sistemas distribuidos (modelo RPC), lo que permite a programas de lado del cliente llamar procedimientos transparentemente en programas del servidor corriendo en procesos separados y generalmente en diferentes computadoras del cliente.
+	En los 90's, POO fue extendida para permitir a objetos en diferentes procesos comunicarse con otro a través de RMI (método de invocación remota).
+
+RMI es referida a métodos de invocación remota en un modo genérico, esto no debe ser confundido como ejemplos particulares de métodos de invocación remota, así como Java RMI
+
+5.2 Protocolos de Solicitud-Respuesta
+
+Esta forma de comunicación está diseñada para dar soporte a los roles y al intercambio de mensajes en un típicas interacciones cliente-servidor.
+
+Usualmente esta comunicación (solicitud-respuesta)  es síncrona, pues el cliente procesa bloques hasta que a respuesta llega del servido.
+
+Protocolo Solicitud-Respuesta. Este protocolo está basado en un trío de comunicación primitiva, doOperation, getRequest and sendReply. Esto une solicitudes con respuestas.
+El método doOperation es usado por los clientes para invocar operaciones remotas. Sus argumentos especifican el servidor remoto y la operación a invocar. El resultado se guarda en un arreglo de bytes que contienen la respuesta, una vez invocado este método, la llamada doOperation() es bloqueada hasta que el servidor procese la operacion solicitada y mande un mensaje de respuesta. getRequest() adquiere una solicitud del cliente vía puerto del servidor, es usado por el servidor. sendReply() envía una respuesta al cliente según su dirección y puerto de internet, es usado por el servidor. Cuando el mensaje de respuesta es recibido por el cliente, doOperation() es desbloqueado  y la ejecución del programa del cliente continúa.
+
+Identificadores de mensaje. Cualquier esquema que involucre el manejo de mensajes para proveer propiedades adicionales, requiere que cada mensaje tenga un id único por el que será referenciado. El id de mensaje consisteen 2 partes
+	1. requestId, es tomado de una secuencia de enteros que incrementan a través del envío de procesos.
+	2. un identificador para el emisor del proceso, por ejemplo el puerto y la dirección de internet.
+El primer punto hace único el identificador al emisor, el segundo punto lo hace único en el sistema distribuido.
+Cuando resquestId alcanza el máximo valor de un unsigned int (2^32 - 1) se reinicia en 0.
+
+Modelo de fallas en el protocolo Solicitud-Respuesta. Si las 3 primitivas (doOperation(), getResquest(), sendReply()) son implementadas bajo datagramas UDP , estos sufren las mismas fallas de comunicación.
+	Fallas de omisión
+	Los mensajes no están garantizados de ser entregados en el orden del emisor.
+Asímismo, el protocolo puede sufrir una falla de procesos. Asumimos que los procesos tienen crash failures. Estos no producen comportamiento bizantino.
+Algunas veces doOperation() usa "tiempos fuera" cuando está esperando para recibir un mensaje de respuesta por parte del servidor.
+
+Tiempos fuera. Hay varias opciones que doOperation() puede hacer después de un tiempo fuera. La más simple, es retornar inmediatamente una indicación de que doOperation() ha fallado.
+
+Descarte de mensajes de solicitud duplicados. Cuando el mensaje de solicitud es retransmitido, el servidor lo recibirá más de una vez. Esto puede llevar a que el servidor ejecute una solicitud más de una vez. Para tratar esto, el protocolo es diseñado para reconocer mensajes sucesivos (de parte del cliente) con el mismo id de solicitud y filtrar los duplicados. 
+
+Mensajes de respuesta perdidos. Si el servidor ha enviado una respuesta cuando recibe una solicitud duplicada necesitará ejecutar la operación de nuevo a menos que haya guardado el resultado anterior. Algunos servidores pueden ejecutar la misma acción más de una vez y obtener la misma respuesta. Una operación idempotente es una operación que puede ser  ejecutada repetidamente con el mismo efecto que si hubiera sido ejecutada antes. 
+
+Historia. Para servidores que requieren retransmision de respuestas sin reejecucion  de operaciones, una historia es usada. Se refiere a una estructura que contiene los mensajes de respuesta que han sido transmitidos. Un problema del uso de historias, es su costo en memoria.
+
+Estilos de protocolos de intercambio. 3 protocolos que producen comportamientos diferentes en presencia de fallas de comunicación son usadas para implementar varios tipos de comportamiento de solicitud. 
+	El protocolo de solicitud (R)
+	El protocolo de solicitud-respuesta(RR)
+	El protocolo de solicitud-respuesta-reconocimiento de respuesta(RRA)
+En el protocolo R, un simple mensaje de solicitud es enviado por el cliente al servidor. Este protocolo está implementado bajo UDP.
+El protocolo RR es útil para los intercambios cliente-servidor ya que está basado en el protocolo de solicitud-respuesta.
+El protocolo RRA está basado en el intercambio de 3 mensajes, solicitud-respuesta-reconocimiento de la respuesta. Este último mensaje contiene el requestId del mensaje de solicitud siendo reconocida. 
+
+Uso de TCP streams para implementar el protocolo solicitud-respuesta. Cancelar la implementación de protocolos multipaquete es una de las razones para escoger el implementar protocolos de solicitud-respuesta bajo TCP streams. Permitiendo que argumentos y resultados de cualquier tamaño sean transmitidos. Si TCP es usado, asegura que los mensajes de  solicitud y de respuesta serán entregados. 
+
+HTTP: Un ejemplo de protocolo solicitud-respuesta. Servidores web manejan recursos implementados en 2 diferentes formas.
+	Como datos. Texto, la clase de un applet
+	Como un programa. Programas en PHP o python
+La solicitud del cliente espeficica una URL que incluye el DNS hostname de un servidor web y un número de puerto opcional en un servidor web.
+HTTP soporta métodos como GET, PUT, POST. Este protocolo permite "negociación de contenido" y "autenticación".
+HTTP está implementado bajo TCP. 
+
+Métodos HTTP. Cada solicitud del cliente especifica el nomnbre del método  para ser aplicado a un recurso  en el servidor y la URL de ese recurso. 
+	Get: Solicita el recurso cuyo URL es dado como un argumento. Si la URL se refiere a datos, retorna los datos, si el URL refiere a un programa, lo corre y retorna la salida al cliente. 
+	Head: Esta solicitud es similar get, solo que no retorna los datos, si no información de los datos.
+	Post: Esta solicitud puede suplir los datos a los que refiere la URL. Es usada cuando la acción cambiará los datos en el servidor, por ejemplo inserciones en una base de datos.
+	Put: Solicita que los datos suplidos en la solicitud están guardados en la URL dada. 
+	Delete: El servidor borra el recurso identificado por el URL dado.
+	Options: El servidor suple el cliente con una lista de métodos que son permitidos a aplicarse en el URL dado.
+	Trace: El servidor regresa el mensaje de solicitud.
+
+Contenidos del mensaje. El mensaje de solicitud especifica el nombre del método, la URL del recurso, la versión del protocolo, algunas cabeceras y mensajes opcionales en el cuerpo. El mensaje de respuesta especifica la versión del protocolo, el estado del código y una "razón", alguna cabecerasy un mensaje opcional en el cuerpo.

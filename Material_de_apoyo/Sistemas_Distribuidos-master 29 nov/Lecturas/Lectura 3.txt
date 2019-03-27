@@ -1,0 +1,35 @@
+Lectura 3 Coulouris(inglés) 4.4 Multicast comunication pp 172-174
+
+API de JAVA para IP multicast
+
+	El API de java provee una interface de datagrama para IP multicast a través de la clase MulticastSocket, la cual es una subclase de DatagramSocket con la capacidad de unir grupos multicast. La clase MulticastSocket nos ofrece 2 alternativas de constructor, una donde se puede especificar el puerto local y otra donde se puede ocupar cualquier puerto libre.
+
+	Un proceso puede unir un grupo multicast invocando el método joinGroup de su socket. El socket unirá un grupo multicast en un puerto dado y recibirá datagramas enviados por procesos en otras computadoras de ese grupo en ese puerto.
+
+	Un procesos puede dejar un grupo invocando el método leaveGroup.
+
+	La API de java permite TTL estar establecido para un socket multicast a través del método setTimeToLive. El valor predeterminado es 1, permitiendo al multicast propagarse solamente en la red local.
+
+	Una aplicación implementada bajo IP multicast usaría más de un 1 puerto. Por ejemplo, una aplicación que permita a un grupo de usuarios chatear, tiene un puerto para el envío y recibo de mensajes y otro para el intercambio de datos de control.
+
+Confiabilidad y orden de Multicast
+	
+	Un datagrama enviado de un router multicast a otro puede que se pierda, evitando que todos los destinatarios más allá de ese router reciban el mensaje. 
+	Cuando un multicast en una red local usa las capacidades de multicastng de la red para permitir a un simple datagrama llegar a múltiples recipientes, uno de esos recipientes puede que borre el mensaje porque el buffer está lleno.
+
+	Ortto factor es que cualquier proceso puede fallar. Si un router multicast falla, los miembros del grupo más allá del router no recibirán el mensaje multicast. Aún así, los miembros locales puede que si.
+
+	El ordenamiento es otro problema. Los paquetes IP enviados a través de una red no necesariamente llegarán en el orden en el que fueron enviados. Con el posible efecto que algunos miembros del grupo reciban los datagramas de un solo remitente en un orden diferente que los demás miembros del grupo. En adición, mensajes enviados por 2 diferentes procesos no necesariamente llegarán en el mismo orden a todos los miembros del grupo. 
+
+	Efectos de la confiabilidad y el ordenamiento:
+
+		1. Tolerancia a fallos basada en servicios replicados: Considera un servicio replicado que consiste en miembros de un grupo de servidores que inician al mismo estado inicial y siempre hacen las mismas operaciones en el mismo orden. Para llevar un mejor control de estas operaciones, se requiere que se envíen solicitudes para hacer una operación a todas las réplicas. Si una pierde la solicitud, será inconsistente con las demás. En la mayoría de los casos se requeriría que todos los miembros reciban mensajes de solicitud en el mismo orden que las demás.
+
+		2. Descubriendo servicios en una red espontánea: Una forma de descubrir servicios en una red espontánea son solicitudes multicast en intervalos periódicos. Y para los servicios disponibles  escuchar los multicast y responder.
+
+		3. Mejor performance para datos replicados: Considera el caso que datos replicados están distribuidos en mensajes multicast. El efecto de mensajes perdidos y ordenamiento inconsistente dependería del método de replicación y la importancia de todas las réplicas siento actualizadas.
+
+		4. Propagación de notificaciones de evento: La app determina las cualidades requeridas por el multicast. 
+
+		Se necesita un confiable multicast en apps que muchos mensajes son transmitidos y recibidos por todos los miembros de un grupo o por ninguno.
+

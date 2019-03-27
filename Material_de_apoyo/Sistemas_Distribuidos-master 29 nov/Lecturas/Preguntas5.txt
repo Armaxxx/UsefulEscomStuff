@@ -1,0 +1,29 @@
+Este método usa "tiempos fuera" cuando está esperando recibir el mensaje de respuesta del servidor, cuando este ha fallado o un mensaje de solicitud o de respuesta es borrado,
+doOperation()
+getRequest()
+sendReply()
+useTimeout()
+
+En este método del protocolo HTTP si la URL dada refiere a datos, le retorna al cliente esos datos o si la URL refiere a un programa, lo corre y retorna la salida al cliente.
+GET
+POST
+HEAD
+OPTIONS
+
+Extiende la abstracción común de programación de la llamada al procedimiento a ambientes distribuidos.
+RPC
+RMI
+RIM
+RCP
+
+Si las 3 operaciones primitivas (doOperation(), getRequest() y sendReply()) son implementadas bajo datagramas UDP puede sufrir la siguiente falla de comunicación:
+No hay garantía de que la entrega de mensajes sea hecha en el orden del emisor.
+Que no sean entregados los mensajes.
+Que se bloquee el servidor
+Que se bloquee el cliente.
+
+¿Cómo suele ser la comunicación solicitud-respuesta?
+Síncrona
+Asíncrona
+Con retardos
+Paralela
