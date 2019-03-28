@@ -1,0 +1,69 @@
+Lectura 2 Coulouris en Español Cap. 4,4.1,4.2
+
+API: Interfaz de Programación de Aplicaciones
+
+La API de java para la comunicación entre procesos en internet, proporciona comunicación tanto por datagramas como por streams.
+
+Los 2 patriones de comunicación más comunmente utilizador en os programas distribuidos son:
+Comunicación cliente-servidor: Es en la que los mensakes de petición y respuesta proporcionan la base para la invocaión remota de métodos o de procedimientos.
+Comunicación de grupo: Es en la que el mismo mensaje se envía a varios procesos.
+
+La invocación de métodos remotos permite que un objeto invoque un método en otro objeto situado en un procedimiento remoto.
+
+Una llamada a un procedimiento remoto permite que un cliente ejecute un procedimiento de un servidor remoto.
+
+El intercambio de mensajes entre un par de procesos se puede basar en 2 operaciones: Envía y recibe, definidas en función del destino y del mensaje.
+
+Comunicación de datagramas UDP
+
+Un datagrama enviado por UDP se transmite desde un proceso emisor a un proceso receptor sin acuse de recibo ni reintentos
+
+	Tamaño del mensaje: El proceso necesita especificar un tamaño sobre el cual se almacenará el mensaje recibido. La capa subyacente IP permite paquetes de 2¹⁶ bytes, incluyendo tanto cabeceras como mensaje. Algunos entornos imponen la restricción a su talla de 8 kb
+	Bloqueo: La comunicación  de datagramas UDP utiliza operaciones de envío, envío, no bloqueantes y recepciones, recibe, bloqueantes. El método recibe produce un bloqueo hasta que se reciba un datagrama, a menos que se haya establecido un tiempo  límite asociado al conector.
+	Tiempo Límite de espera: En algunos programas, no es tan apropiado que un proceso que ha invocado una operación recibe deba esperar indefinidament, sobretodo en aquellas situaciones en las que el potencial emisor puede haber caído  o se haya podido perder el mensaje esperado. Por lo tanto hay que fijar tiempos límite de espera en los conectores.
+	Recibe de cualquiera: El método recibe no especifica el origen de los mensajes.
+
+Modelo de fallo
+
+Se define una comunicación fiable en términos de 2 propiedades:
+	Integridad: Requiere que los métodos no se corrompan ni se dupliquen.
+
+El modelo de fallo puede utilizarse para proponer un modelo de fallo para los datagramas UPD, que padece de las siguientes debilidades:
+	Fallos de omisión: Los mensajes pueden desecharse ocasionalmente, ya sea porque se ha producido un error detectado por el checksum o porque no queda espacio libre en el origen o en el destino. Se incluyen los fallos por omisión en el emisor y los fallos por omisión en el receptor como fallos de omisión en el canal de comunicaciones.
+	Ordenación: Algunas veces, los mensajes se entregan en desorden con respecto a su orden de emisión.
+
+Utilización de UDP
+Servicio susceptible a sufrir fallos de omisión ocasionales. Los datagramas UDP son, en algunas ocasiones, una elección atractiva porque no oadecenlas sobrecargas asociadas a la entrega de mensajes garantizada. Las 3 principales fuentes para esta sobrecarga son:
+	1. La necesidad de almacenar información de estado en el origen y en el destino
+	2. La transmisión de mensajes extra
+	3. La latencia para el emisor
+
+API Java para datagramas UDP
+Comunicación de datagramas por medio de 2 clases: 
+	DatagramPacket: Esta clase proporciona un constructor que crea una instancia compuesta por una cadena de bytes que almacena el mensaje, la longitud del mensaje, la dirección internet y el número de puerto local del conector destino.
+	DatagramSocket: Esta clase maneja conectores para enviar y recibir datagramas UDP. Proporciona un constructor que toma un número de puerto como argumento, apropiado para los procesos que neceistan utilizar un puerto concreto. También proporciona un constructor sin argumentos que permite que el sistema elija un puerto de entre los que estén libres. Estos cokets pueden lanzar una excepción SocketException si el puerto ya está siendo usado o si se epecifica un puerto reservado cuando se ejecuta sobre UNIX.
+	Algunos métodos que proporciona DatagramSocket son: send,receive, setSoTimeout y connect.
+
+
+Comunicación de Streams TCP
+
+La API para el protocolo TCP, originaria de UNIX BSD 4.x, proporciona la abstracción de un flujo de bytes (stream) en el que pueden escribirse y desde el que pueden leerse datos.
+	Tamaño del mensaje: La aplicación puede elegir la cantidad de datos que quiere escribir o leer del stream.
+	Mensajes perdidos: Utiliza un esquema de acuse de recibo de los mensajes.
+	Control de flujo: Intenta ajustar las velocidades de los procesos que leen y escriben en un stream.
+	Duplicación y ordenación de los mensajes: A cada paquete IP se le asigna un ID, mediante el cual el receptor puede detectar y rechazar los mensajes duplicados, o que pueda ordenar los mensajes que lleguen desordenados.
+	Destino de los mensajes: Un par de procesos de comunicación establencen una conexión antes de que puedan comunicarse mediante un stream. El establecimiendo de la conexión implica una petición de conexión, connect, cliente-servidor, seguida de una aceptación, accept, servidor-cliente
+
+Aspectos importantes relacionados con la comunicación de streams:
+	Concordancia de ítems de datos: Los 2 procesos que se comunican necesitan estar de acuerdo en el tipo de datos transmitidos por el stream.
+	Bloqueo: Los datos escritos en un stream se almacenan en un búfer en el conector destino. El proceso que escribe los datos en el stream será bloqueado por el mecanismo de control de stream de TCP si el conector del otro lado intenta almacenar en la cola de entrada más información de la permitida.
+	Hilos: Cuando un servidor acepta una conexión, generalmente crea un nuevo hilo con el que comunicarse con el nuevo cliente. La ventaja de utilizar un hilo separado para cada cliente es que el servidor puede bloquearse a la espera de entradas sin afectar a los otros clientes.
+
+Modelo de fallo: Los streams TCP utilizan la suma de comprobación para detectar y rechazar los paquetes corruptos y utlizan un número de secuencia para detectar y eliminar los paquetes duplicados.
+
+Utilizaciṕn de TCP: Muchos de los servicios utilizados se ejecutan sobre conexiones TCP, con número de puerto reservados. HTPP, FTP, Telnet, SMTP
+
+API para los streams TCP: La interfaz para los streams TCP está constituida por las clases:
+	ServerSocket: Esta clase está diseñada para ser utilizada por un servidor para crear un conector en el puerto de servidor que escucha las peticiones de conexión de los clientes.
+	Socket: Esta clase es utilizada por el par de procesos de una conexión. El cliente utiliza un constructor para crear unconector, especificando el nombre DNS de host y el puerto del servidor. El constructor crea el conector asociado con el puerto local y también se conecta con el computador remoto especificado en el puerto indicado.
+	Socket

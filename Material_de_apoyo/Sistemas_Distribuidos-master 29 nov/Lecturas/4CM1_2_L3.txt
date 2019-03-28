@@ -1,0 +1,29 @@
+1. Es una operación que envía un solo mensaje de un proceso a cada uno de los miembros de un grupo de procesos, de manera que la membresía del grupo es transparente para quien la envía.
+Multicast
+Anycast
+Broadcast
+Geocast
+
+2. IP multicast esta únicamente disponible vía
+UDP
+TCP
+TFTP
+SCTP
+
+3. Cuál de las siguientes opciones no corresponde a una característica de la infraestructura que los mensajes multicast proveen para estructurar sistemas distribuidos.
+De consumo acumulativo sobre los recursos de la red
+Descubrir servicios en redes espontaneas
+Mejorar el desempeño por datos replicados
+Propagación de notificaciones del evento
+
+4. La API de Java provee una interface de datagrama para IP multicast a través de la clase:
+MulticastSocket
+DatagramSocket
+Socket
+Datagram
+
+5. Un proceso se puede unir a un grupo multicast dando la dirección multicast e invocando al método:
+joinGroup
+addToGroup
+joinToGroup
+addGroup

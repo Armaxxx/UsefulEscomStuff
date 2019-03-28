@@ -1,0 +1,37 @@
+Notas Distributed Systems 5° Ed. Cap 1,1.1,1.2
+
+Un sistema distribuido en aquel en el que los componentes (tanto HW como SW) están localizados en computadoras conectadas en red comunican y coordinan sus acciones solamente mediante envío de mensajes
+
+Los retos que surgen de la construcción de sistemas distribuidos son la heterogeneidad de sus componentes, la apertura (lo que permite a los componentes ser agregados o reemplazados), seguridad, escalabilidad (la habilidad de seguir trabajando bien aunque el número de visitas aumente),manejo de fallas, concurrencia de los componentes, transparencia y proveer calidad de servicio.
+
+Las computadoras que están conectadas en red pueden estar espacialmente separadas por cualquier distancia. Quizá puedan estar separadas por continentes, edificios o incluso estar en la misma sala.
+
+Concurrencia: Cuando las computadoras están conectadas en red, la ejecución concurrente de programas es la norma, "mientras yo hago mi trabajo en mi computadora, tú haces tu trabajo en la tuya", compartiendo recursos como páginas web o archivos cuando sea necesario.
+No reloj global: Cuando los programas necesitan cooperar, estos coordinan  sus acciones mediante el intercambio de mensajes. Esta coordinación usualmente depende de una idea compartida del tiempo en el que las acciones de las computadoras ocurren. Pero sucede que no hay límites en la precisión en la que las computadoras en una red pueden sincronizar sus relojes. No hay una sola noción global del tiempo exacto.
+
+Independiencia de fallas: Todos los sistemas de computadoras pueden fallar, siendo responsabilidad de los diseñadores de sistemas planificar las consecuencias de posibles fallas. Los sistemas distribuidos pueden fallar de nuevas formas. Fallas en la red resultan en el aislamiento de las computadoras que están conectadas en ella, pero estas no dejan de trabajar. Los programas en ellas no pueden detectar cuando la red ha fallado o sea vuelto más lenta.
+
+La principal motivación para construir y usar sistemas distruibuidos, es el compartir recursos.
+
+Los sistemas distribuidos abarcan muchos de los más significantes desarrollos tecnológicos de los últimos años.
+
+Notas SD_Coulouris cap. 1.4
+
+La heterogeneidad hace referencia a la variedad y diferencia; esto se aplica en los tipos de redes.
+Se utiliza un protocolo para comunicarse entre éstas.
+
+Middleware: se aplica al estrato software que provee una abstracción de programación. proporciona un modelo computacional uniforme al alcance de los programadores de servidores y aplicaciones distribuidas.
+
+Heterogeneidad y código móvil: se refiere al código que puede ser enviado desde un computador a otro y ejecutarse en éste. Los applets de java son un ejemplo de esto.
+
+Extensibilidad: determina si el sistema puede ser extendido y reimplementado en diversos aspectos. Se determina por el grado en el cual se pueden añadir nuevos servicios de comparticiòn de recursos y ponerlos a disposición para el uso.
+
+No es posible obtenerla a menos que la especificación y documentación de las interfaces estén disponibles para desarrolladores. Es como una estandarización. 
+
+Los sistemas abiertos se caracterizan porque sus interfaces están publicadas
+
+Los sistemas distribuidos abiertos se basan en la providencia de un mecanismo de comunicación uniforme e interfaces publicas para acceder a recursos compartidos.
+
+Los sistemas distribuidos abiertos pueden construirse con hardware y software heterogéneo. posiblemente de diferentes proveedores
+
+
