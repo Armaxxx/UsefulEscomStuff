@@ -3,7 +3,7 @@ using namespace std;
 
 Solicitud::Solicitud(){
     socketlocal = new SocketDatagrama(0);
-	id = 0;
+	//id = 0;
 }
 
 char *Solicitud::doOperation(char *IP, int puerto, int operationId, char *arguments){
@@ -12,17 +12,17 @@ char *Solicitud::doOperation(char *IP, int puerto, int operationId, char *argume
 	char* resultado;
     PaqueteDatagrama *paquete,*paquete2;
 	msj.messageType = 0;
-	msj.requestId = id;
+	//msj.requestId = id;
     strcpy(msj.IP, IP);
     msj.puerto = puerto;
 	msj.operationId = operationId;
     strcpy(msj.arguments, arguments);
 
-	id++;
+	//id++;
 
     cout << "Se crea el mensaje con los datos:\n";
 	cout << "\tTipo de mensaje: " << msj.messageType << endl;
-	cout << "\tIdentificador de petición: " << msj.requestId << endl;
+	//cout << "\tIdentificador de petición: " << msj.requestId << endl;
 	cout << "\tIP y puerto: " << msj.IP << ":" << msj.puerto << endl;
 	cout << "\tID de operación: " << msj.operationId << endl;
     cout << "\tArgumentos: " << atoi(msj.arguments) << endl;

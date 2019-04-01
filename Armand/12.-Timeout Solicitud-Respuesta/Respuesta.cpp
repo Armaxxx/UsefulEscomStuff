@@ -18,7 +18,7 @@ struct mensaje *Respuesta::getRequest(){
 
     cout << "Se recibe el mensaje con los datos:\n";
 	cout << "\tTipo de mensaje: " << msj->messageType << endl;
-	cout << "\tIdentificador de petición: " << msj->requestId << endl;
+	//cout << "\tIdentificador de petición: " << msj->requestId << endl;
 	cout << "\tIP y puerto: " << msj->IP << ":" << msj->puerto << endl;
 	cout << "\tID de operación: " << msj->operationId << endl;
     cout << "\tArgumentos: " << msj->arguments << endl;

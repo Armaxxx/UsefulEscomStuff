@@ -9,7 +9,7 @@ class Solicitud
 {
 private:
     SocketDatagrama *socketlocal;
-    int id;
+    //int id;
 public:
     Solicitud();
     char *doOperation(char *IP, int puerto, int operationId, char *arguments);

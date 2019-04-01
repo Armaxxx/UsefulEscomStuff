@@ -16,7 +16,7 @@ int main() {
 
         cout << "Peticion obtenida, el mensaje es:\n";
         cout << "\tTipo de mensaje: " << msj->messageType << endl;
-        cout << "\tIdentificador de petición: " << msj->requestId << endl;
+        //cout << "\tIdentificador de petición: " << msj->requestId << endl;
         cout << "\tIP y puerto: " << msj->IP << ":" << msj->puerto << endl;
         cout << "\tID de operación: " << msj->operationId << endl;
         cout << "\tArgumentos: " << msj->arguments << endl;
