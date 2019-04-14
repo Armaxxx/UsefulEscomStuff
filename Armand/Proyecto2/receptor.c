@@ -7,14 +7,26 @@
 #include <string.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include <pthread.h>
+#include <sys/sem.h>
+#include <semaphore.h>
 
-int puerto = 7200;
+void HiloEmisor();
+int puerto = 7201;
+int s, clilen;
+struct sockaddr_in server_addr, msg_to_client_addr;
+sem_t mutex1;
+sem_t mutex2;
 
 int main(void){
+    int missing[2];
+    pthread_t th1;
     char aux[4];
-    int s, res = 1, num, clilen,error = 0;
+    int res = 1, num, error = 0;
     float prom;
-    struct sockaddr_in server_addr, msg_to_client_addr;
+
+    sem_init(&mutex1, 0, 1);
+    sem_init(&mutex2, 0, 0);
 
     s = socket(AF_INET, SOCK_DGRAM, 0);
 
@@ -24,20 +36,39 @@ int main(void){
     server_addr.sin_port = htons(puerto);
     bind(s, (struct sockaddr *) &server_addr, sizeof(server_addr));
     clilen = sizeof(msg_to_client_addr);
-
     while(1){
         recvfrom(s, (char *)&num, sizeof(int), 0, (struct sockaddr *) &msg_to_client_addr, &clilen);
         if ( num > res){
+            missing[0] = res;
+            missing[1] = num;
             error += num - res;
             res = num;
+            pthread_create(&th1,NULL,(void *) HiloEmisor, (void *)missing);
         }
         if (num == 0){
             break;
         }
         res++;
     }
-    printf("Se finalizo con %d errores y %d paquetes enviados",error,res);
+    sem_wait(&mutex1);
+    missing[0] = 0;
+    missing[1] = 1;
+    pthread_create(&th1,NULL,(void *) HiloEmisor, missing);
+    printf("Se finalizo con %d errores y %d paquetes enviados\n",error,res);
     prom = (float)error/(float)res;
-
+    sem_post(&mutex1);
+    sem_wait(&mutex2);
     sendto(s, (char *)&prom, sizeof(float), 0, (struct sockaddr *)&msg_to_client_addr, clilen);
+}
+
+void HiloEmisor(int *missing){
+    sem_wait(&mutex1);
+    int x;
+    for(x = missing[0]; x < missing[1]; x++)
+        sendto(s, (char *)&x, sizeof(int), 0, (struct sockaddr *)&msg_to_client_addr, clilen);
+    if (missing[0] == 0)
+        sem_post(&mutex2);
+    sem_post(&mutex1);
+    pthread_exit(NULL);
+    
 }
