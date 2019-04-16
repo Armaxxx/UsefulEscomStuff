@@ -1,4 +1,0 @@
-tftp: main.c tftp.o
-	gcc main.c tftp.o -o tftp
-tftp.o: tftp.c tftp.h
-	gcc tftp.c -c
