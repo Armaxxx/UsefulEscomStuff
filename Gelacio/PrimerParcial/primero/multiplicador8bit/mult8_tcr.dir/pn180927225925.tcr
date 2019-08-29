@@ -1,0 +1,9 @@
+#Start recording tcl command: 9/27/2018 22:55:56
+#Project Location: C:/CursoArqui/multiplicador8bit; Project name: mult8
+prj_project open "C:/CursoArqui/multiplicador8bit/mult8.ldf"
+pgr_project close
+pgr_project open "C:/CursoArqui/multiplicador8bit/mult8/mult8.xcf"
+pgr_program run
+prj_project save
+prj_project close
+#Stop recording: 9/27/2018 22:59:25

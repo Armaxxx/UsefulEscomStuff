@@ -1,0 +1,90 @@
+Running in Lattice mode
+
+Starting:    C:\lscc\diamond\3.10_x64\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.10_x64\synpbase
+Hostname:    LAPTOP-VIKJBT0U
+Date:        Tue Aug 13 09:02:16 2019
+Version:     M-2017.03L-SP1-1
+
+Arguments:   -product synplify_pro -batch GateswMux00_GateswMux00_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+log file: "C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\GateswMux00_GateswMux00.srr"
+Running: hdl_info_gen in foreground
+
+Generating HDL info...
+
+hdl_info_gen completed
+# Tue Aug 13 09:02:20 2019
+
+Return Code: 0
+Run Time:00h:00m:02s
+Copied C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\GateswMux00_GateswMux00.srr to C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\GateswMux00_GateswMux00.srf
+log file: "C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\GateswMux00_GateswMux00.srr"
+Running: GateswMux00 in foreground
+
+Running proj_1|GateswMux00
+
+Running: compile (Compile) on proj_1|GateswMux00
+# Tue Aug 13 09:02:20 2019
+
+Running: compile_flow (Compile Process) on proj_1|GateswMux00
+# Tue Aug 13 09:02:20 2019
+
+Running: compiler (Compile Input) on proj_1|GateswMux00
+# Tue Aug 13 09:02:20 2019
+Copied C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\synwork\GateswMux00_GateswMux00_comp.srs to C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\GateswMux00_GateswMux00.srs
+
+compiler completed
+# Tue Aug 13 09:02:25 2019
+
+Return Code: 0
+Run Time:00h:00m:05s
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|GateswMux00
+# Tue Aug 13 09:02:25 2019
+
+multi_srs_gen completed
+# Tue Aug 13 09:02:26 2019
+
+Return Code: 0
+Run Time:00h:00m:01s
+Copied C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\synwork\GateswMux00_GateswMux00_mult.srs to C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\GateswMux00_GateswMux00.srs
+Copied C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\GateswMux00_GateswMux00.srr to C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\GateswMux00_GateswMux00.srf
+Complete: Compile Process on proj_1|GateswMux00
+
+Running: premap (Pre-mapping) on proj_1|GateswMux00
+# Tue Aug 13 09:02:26 2019
+
+premap completed
+# Tue Aug 13 09:02:30 2019
+
+Return Code: 0
+Run Time:00h:00m:04s
+Complete: Compile on proj_1|GateswMux00
+
+Running: map (Map) on proj_1|GateswMux00
+# Tue Aug 13 09:02:30 2019
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on proj_1|GateswMux00
+# Tue Aug 13 09:02:30 2019
+Copied C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\synwork\GateswMux00_GateswMux00_m.srm to C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\GateswMux00_GateswMux00.srm
+
+fpga_mapper completed
+# Tue Aug 13 09:02:35 2019
+
+Return Code: 0
+Run Time:00h:00m:05s
+Complete: Map on proj_1|GateswMux00
+Copied C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\GateswMux00_GateswMux00.srr to C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\GateswMux00_GateswMux00.srf
+Complete: Logic Synthesis on proj_1|GateswMux00
+TCL script complete: "GateswMux00_GateswMux00_synplify.tcl"
+exit status=0
+exit status=0
+Save changes for project:
+C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\primero\GateswMux\GateswMux00\proj_1.prj
+batch mode default:no

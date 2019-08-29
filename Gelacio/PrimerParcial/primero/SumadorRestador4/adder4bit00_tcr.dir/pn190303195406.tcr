@@ -1,0 +1,5 @@
+#Start recording tcl command: 3/3/2019 19:53:53
+#Project Location: C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas; Project name: adder4bit00
+prj_project new -name "adder4bit00" -impl "adder4bit00" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+prj_project save
+#Stop recording: 3/3/2019 19:54:06

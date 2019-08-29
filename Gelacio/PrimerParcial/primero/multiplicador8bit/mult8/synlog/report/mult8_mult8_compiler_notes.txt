@@ -1,0 +1,7 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"C:\CursoArqui\lscc\diamond\3.10_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\CursoArqui\multiplicador8bit\mult8.vhdl":10:7:10:10|Top entity is set to mul8.
+@N: CD630 :"C:\CursoArqui\multiplicador8bit\mult8.vhdl":10:7:10:10|Synthesizing work.mul8.mul.
+@N|Running in 64-bit mode
+

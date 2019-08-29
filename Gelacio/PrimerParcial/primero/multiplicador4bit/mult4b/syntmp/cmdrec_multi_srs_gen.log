@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  topmult4bit00  -multisrs  "C:\Users\Mario\Desktop\Primer parcial\multiplicador4bit\mult4b\synwork\mult4b_mult4b_comp.srs"  -osyn  "C:\Users\Mario\Desktop\Primer parcial\multiplicador4bit\mult4b\synwork\mult4b_mult4b_mult.srs"  -log  "C:\Users\Mario\Desktop\Primer parcial\multiplicador4bit\mult4b\synlog\mult4b_mult4b_multi_srs_gen.srr" 
+relcom:..\..\..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe -link -top topmult4bit00 -multisrs "C:\Users\Mario\Desktop\Primer parcial\multiplicador4bit\mult4b\synwork\mult4b_mult4b_comp.srs" -osyn "C:\Users\Mario\Desktop\Primer parcial\multiplicador4bit\mult4b\synwork\mult4b_mult4b_mult.srs" -log "C:\Users\Mario\Desktop\Primer parcial\multiplicador4bit\mult4b\synlog\mult4b_mult4b_multi_srs_gen.srr"
+rc:0 success:1 runtime:1
+file:..\synwork\mult4b_mult4b_comp.srs|io:i|time:1554999156|size:5651|exec:0|csum:7407726F3D3D245C42663CD42F848A48
+file:..\synwork\mult4b_mult4b_mult.srs|io:o|time:1554999158|size:3192|exec:0|csum:
+file:..\synlog\mult4b_mult4b_multi_srs_gen.srr|io:o|time:1554999158|size:602|exec:0|csum:
+file:..\..\..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1501910190|size:8865280|exec:1|csum:B37FCE9CF34F30C81898D8440E6E88C7

@@ -1,0 +1,8 @@
+#Start recording tcl command: 8/9/2019 10:57:37
+#Project Location: C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica5/and00; Project name: and00
+prj_project new -name "and00" -impl "and0" -dev LCMXO2-7000HE-4TG144C -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica5/and00/and00.vhdl"
+prj_run Export -impl and0 -task Jedecgen
+prj_run Export -impl and0 -task Jedecgen
+#Stop recording: 8/9/2019 11:51:18

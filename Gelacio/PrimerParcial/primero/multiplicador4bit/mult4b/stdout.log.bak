@@ -1,0 +1,89 @@
+Running in Lattice mode
+
+Starting:    C:\CursoArqui\lscc\diamond\3.10_x64\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\CursoArqui\lscc\diamond\3.10_x64\synpbase
+Hostname:    LENOVO-PC
+Date:        Sat Sep 15 20:54:55 2018
+Version:     M-2017.03L-SP1-1
+
+Arguments:   -product synplify_pro -batch mult4b_mult4b_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+log file: "C:\CursoArqui\multiplicador4bit\mult4b\mult4b_mult4b.srr"
+Running: hdl_info_gen in foreground
+
+Generating HDL info...
+
+hdl_info_gen completed
+# Sat Sep 15 20:54:55 2018
+
+Return Code: 0
+Run Time:00h:00m:00s
+log file: "C:\CursoArqui\multiplicador4bit\mult4b\mult4b_mult4b.srr"
+Running: mult4b in foreground
+
+Running proj_1|mult4b
+
+Running: compile (Compile) on proj_1|mult4b
+# Sat Sep 15 20:54:56 2018
+
+Running: compile_flow (Compile Process) on proj_1|mult4b
+# Sat Sep 15 20:54:56 2018
+
+Running: compiler (Compile Input) on proj_1|mult4b
+# Sat Sep 15 20:54:56 2018
+Copied C:\CursoArqui\multiplicador4bit\mult4b\synwork\mult4b_mult4b_comp.srs to C:\CursoArqui\multiplicador4bit\mult4b\mult4b_mult4b.srs
+
+compiler completed
+# Sat Sep 15 20:54:58 2018
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|mult4b
+# Sat Sep 15 20:54:58 2018
+
+multi_srs_gen completed
+# Sat Sep 15 20:54:58 2018
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied C:\CursoArqui\multiplicador4bit\mult4b\synwork\mult4b_mult4b_mult.srs to C:\CursoArqui\multiplicador4bit\mult4b\mult4b_mult4b.srs
+Copied C:\CursoArqui\multiplicador4bit\mult4b\mult4b_mult4b.srr to C:\CursoArqui\multiplicador4bit\mult4b\mult4b_mult4b.srf
+Complete: Compile Process on proj_1|mult4b
+
+Running: premap (Pre-mapping) on proj_1|mult4b
+# Sat Sep 15 20:54:58 2018
+
+premap completed
+# Sat Sep 15 20:54:59 2018
+
+Return Code: 0
+Run Time:00h:00m:01s
+Complete: Compile on proj_1|mult4b
+
+Running: map (Map) on proj_1|mult4b
+# Sat Sep 15 20:54:59 2018
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on proj_1|mult4b
+# Sat Sep 15 20:54:59 2018
+Copied C:\CursoArqui\multiplicador4bit\mult4b\synwork\mult4b_mult4b_m.srm to C:\CursoArqui\multiplicador4bit\mult4b\mult4b_mult4b.srm
+
+fpga_mapper completed
+# Sat Sep 15 20:55:02 2018
+
+Return Code: 0
+Run Time:00h:00m:03s
+Complete: Map on proj_1|mult4b
+Copied C:\CursoArqui\multiplicador4bit\mult4b\mult4b_mult4b.srr to C:\CursoArqui\multiplicador4bit\mult4b\mult4b_mult4b.srf
+Complete: Logic Synthesis on proj_1|mult4b
+TCL script complete: "mult4b_mult4b_synplify.tcl"
+exit status=0
+exit status=0
+Save changes for project:
+C:\CursoArqui\multiplicador4bit\mult4b\proj_1.prj
+batch mode default:no

@@ -1,0 +1,6 @@
+#Start recording tcl command: 3/25/2019 10:51:58
+#Project Location: /home/nexus/Documents/Primer parcial/multiplicador4bit; Project name: mult4b
+prj_project open "/home/nexus/Documents/Primer parcial/multiplicador4bit/mult4b.ldf"
+prj_project save
+prj_project close
+#Stop recording: 3/25/2019 10:59:00

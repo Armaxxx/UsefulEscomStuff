@@ -1,0 +1,35 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Tue Aug 13 09:03:02 2019 *
+NOTE DESIGN NAME: GateswMux00 *
+NOTE DEVICE NAME: LCMXO2-7000HE-5TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS YGM[0] : 110 : out *
+NOTE PINS AGM[0] : 45 : in *
+NOTE PINS YGM[7] : 128 : out *
+NOTE PINS YGM[6] : 126 : out *
+NOTE PINS YGM[5] : 122 : out *
+NOTE PINS YGM[4] : 120 : out *
+NOTE PINS YGM[3] : 117 : out *
+NOTE PINS YGM[2] : 114 : out *
+NOTE PINS YGM[1] : 112 : out *
+NOTE PINS sel[2] : 47 : in *
+NOTE PINS sel[1] : 49 : in *
+NOTE PINS sel[0] : 48 : in *
+NOTE PINS BGM[7] : 99 : in *
+NOTE PINS BGM[6] : 100 : in *
+NOTE PINS BGM[5] : 97 : in *
+NOTE PINS BGM[4] : 98 : in *
+NOTE PINS BGM[3] : 95 : in *
+NOTE PINS BGM[2] : 96 : in *
+NOTE PINS BGM[1] : 93 : in *
+NOTE PINS BGM[0] : 94 : in *
+NOTE PINS AGM[7] : 38 : in *
+NOTE PINS AGM[6] : 40 : in *
+NOTE PINS AGM[5] : 39 : in *
+NOTE PINS AGM[4] : 41 : in *
+NOTE PINS AGM[3] : 42 : in *
+NOTE PINS AGM[2] : 44 : in *
+NOTE PINS AGM[1] : 43 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

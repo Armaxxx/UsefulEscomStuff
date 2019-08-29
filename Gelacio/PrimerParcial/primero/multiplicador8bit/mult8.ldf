@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="mult8" device="LCMXO2-7000HE-4TG144I" default_implementation="mult8">
+    <Options/>
+    <Implementation title="mult8" dir="mult8" description="mult8" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="mul8"/>
+        <Source name="mult8.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="mul8"/>
+        </Source>
+        <Source name="mult8.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="mult8/mult8.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="mult81.sty"/>
+</BaliProject>

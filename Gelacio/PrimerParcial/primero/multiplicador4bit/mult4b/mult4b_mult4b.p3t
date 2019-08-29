@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "mult4b_mult4b.log"
+-o "mult4b_mult4b.csv"
+-pr "mult4b_mult4b.prf"

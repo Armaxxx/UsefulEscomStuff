@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "mult8_mult8.log"
+-o "mult8_mult8.csv"
+-pr "mult8_mult8.prf"

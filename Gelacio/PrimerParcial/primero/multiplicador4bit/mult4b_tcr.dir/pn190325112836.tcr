@@ -1,0 +1,6 @@
+#Start recording tcl command: 3/25/2019 11:25:00
+#Project Location: /home/nexus/Documents/Primer parcial/multiplicador4bit; Project name: mult4b
+prj_project open "/home/nexus/Documents/Primer parcial/multiplicador4bit/mult4b.ldf"
+prj_run Export -impl mult4b -task Jedecgen
+prj_project close
+#Stop recording: 3/25/2019 11:28:36

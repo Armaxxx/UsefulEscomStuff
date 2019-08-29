@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  mux00  -multisrs  "C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\Practica6\mux00\mux0\synwork\mux00_mux0_comp.srs"  -osyn  "C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\Practica6\mux00\mux0\synwork\mux00_mux0_mult.srs"  -log  "C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\Practica6\mux00\mux0\synlog\mux00_mux0_multi_srs_gen.srr" 
+relcom:..\..\..\..\..\..\..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe -link -top mux00 -multisrs "C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\Practica6\mux00\mux0\synwork\mux00_mux0_comp.srs" -osyn "C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\Practica6\mux00\mux0\synwork\mux00_mux0_mult.srs" -log "C:\Users\Mario\Desktop\Semestre 10\Arquitectura de Computadoras\Practicas\PrimerParcial\Practica6\mux00\mux0\synlog\mux00_mux0_multi_srs_gen.srr"
+rc:0 success:1 runtime:0
+file:..\synwork\mux00_mux0_comp.srs|io:i|time:1565715081|size:2577|exec:0|csum:2E23777837F8F0FBFC3282227219D89B
+file:..\synwork\mux00_mux0_mult.srs|io:o|time:1565715083|size:2265|exec:0|csum:
+file:..\synlog\mux00_mux0_multi_srs_gen.srr|io:o|time:1565715083|size:409|exec:0|csum:
+file:..\..\..\..\..\..\..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1501910190|size:8865280|exec:1|csum:B37FCE9CF34F30C81898D8440E6E88C7

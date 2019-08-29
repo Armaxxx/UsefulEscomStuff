@@ -1,0 +1,67 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\mult8bit0\\synwork\\mult8bit00_mult8bit0_comp.srs|-top|mult8bit00|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\bin64\\c_vhdl.exe":1501910110
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\location.map":1501933408
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\std.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\std1164.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\numeric.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\arith.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\hyperents.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1493331104
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\packagefa00.vhdl":1553187427
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\cpld\\lattice.vhd":1501914216
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\PackageHA00.vhdl":1551665638
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\packagemult8bit00.vhdl":1553187230
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\and00.vhdl":1551665006
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\or00.vhdl":1551665735
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\xor00.vhdl":1551665028
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\HA00.vhdl":1551665393
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\fa00.vhdl":1552962691
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\mult8bit00.vhdl":1553187207
+0			"C:\lscc\diamond\3.10_x64\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1			"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\packagefa00.vhdl" vhdl
+2			"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\PackageHA00.vhdl" vhdl
+3			"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\packagemult8bit00.vhdl" vhdl
+4			"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\and00.vhdl" vhdl
+5			"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\or00.vhdl" vhdl
+6			"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\xor00.vhdl" vhdl
+7			"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\HA00.vhdl" vhdl
+8			"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\fa00.vhdl" vhdl
+9			"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\mult8bit00.vhdl" vhdl
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 2 4 6
+8 1 5 7
+9 3 8 4
+#Dependency Lists(Users Of)
+0 -1
+1 8
+2 7
+3 9
+4 7 9
+5 8
+6 7
+7 8
+8 9
+9 -1
+#Design Unit to File Association
+module work mult8bit00 9
+arch work mult8bit00 mult8bit0 9
+module work fa00 8
+arch work fa00 fa0 8
+module work ha00 7
+arch work ha00 ha0 7
+module work xor00 6
+arch work xor00 xor0 6
+module work or00 5
+arch work or00 or0 5
+module work and00 4
+arch work and00 and0 4

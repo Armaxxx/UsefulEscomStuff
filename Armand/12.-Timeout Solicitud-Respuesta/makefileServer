@@ -1,8 +1,0 @@
-Servidor: Servidor.cpp Respuesta.o SocketDatagrama.o PaqueteDatagrama.o
-	g++ Servidor.cpp Respuesta.o SocketDatagrama.o PaqueteDatagrama.o -o Servidor
-Respuesta.o: Respuesta.cpp Respuesta.hpp
-	g++ Respuesta.cpp -c
-SocketDatagrama.o: SocketDatagrama.cpp SocketDatagrama.hpp
-	g++ SocketDatagrama.cpp -c
-PaqueteDatagrama.o: PaqueteDatagrama.cpp  PaqueteDatagrama.hpp
-	g++ PaqueteDatagrama.cpp -c

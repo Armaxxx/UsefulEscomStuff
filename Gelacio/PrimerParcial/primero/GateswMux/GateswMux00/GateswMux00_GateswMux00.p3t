@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "GateswMux00_GateswMux00.log"
+-o "GateswMux00_GateswMux00.csv"
+-pr "GateswMux00_GateswMux00.prf"

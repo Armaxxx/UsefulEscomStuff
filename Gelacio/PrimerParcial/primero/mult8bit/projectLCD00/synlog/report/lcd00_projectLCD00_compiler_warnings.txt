@@ -1,0 +1,8 @@
+@W: CL260 :"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\lcdData00.vhdl":37:2:37:3|Pruning register bit 7 of outWordd(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CD276 :"C:\lscc\diamond\3.10_x64\cae_library\synthesis\vhdl\machxo2.vhd":2297:8:2297:15|Map for port sedstdby of component osch not found
+@W: CL138 :"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\LCDConfig00.vhdl":25:2:25:3|Removing register 'RSc' because it is only assigned 0 or its original value.
+@W: CL138 :"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\LCDConfig00.vhdl":25:2:25:3|Removing register 'RWc' because it is only assigned 0 or its original value.
+@W: CL279 :"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\LCDConfig00.vhdl":25:2:25:3|Pruning register bits 7 to 6 of outCommandc(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL138 :"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\lcdContData00.vhdl":27:2:27:3|Removing register 'RWcd' because it is only assigned 0 or its original value.
+@W: CL260 :"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\lcdContData00.vhdl":27:2:27:3|Pruning register bit 4 of outContcd(4 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+

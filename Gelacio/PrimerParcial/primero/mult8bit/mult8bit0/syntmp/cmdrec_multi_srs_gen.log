@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  mult8bit00  -multisrs  "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\mult8bit0\synwork\mult8bit00_mult8bit0_comp.srs"  -osyn  "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\mult8bit0\synwork\mult8bit00_mult8bit0_mult.srs"  -log  "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\mult8bit0\synlog\mult8bit00_mult8bit0_multi_srs_gen.srr" 
+relcom:..\..\..\..\..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe -link -top mult8bit00 -multisrs "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\mult8bit0\synwork\mult8bit00_mult8bit0_comp.srs" -osyn "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\mult8bit0\synwork\mult8bit00_mult8bit0_mult.srs" -log "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\mult8bit0\synlog\mult8bit00_mult8bit0_multi_srs_gen.srr"
+rc:0 success:1 runtime:0
+file:..\synwork\mult8bit00_mult8bit0_comp.srs|io:i|time:1553187462|size:8136|exec:0|csum:2E277857B84EB961894BFA6BC0C54AB9
+file:..\synwork\mult8bit00_mult8bit0_mult.srs|io:o|time:1553187464|size:5651|exec:0|csum:
+file:..\synlog\mult8bit00_mult8bit0_multi_srs_gen.srr|io:o|time:1553187464|size:409|exec:0|csum:
+file:..\..\..\..\..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1501910190|size:8865280|exec:1|csum:B37FCE9CF34F30C81898D8440E6E88C7

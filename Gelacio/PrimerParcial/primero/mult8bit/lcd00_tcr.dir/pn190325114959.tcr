@@ -1,0 +1,9 @@
+#Start recording tcl command: 3/25/2019 10:47:05
+#Project Location: C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit; Project name: lcd00
+prj_project new -name "lcd00" -impl "projectLCD00" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/ram00/ram0/source/div00.vhdl" "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/ram00/ram0/source/osc00.vhdl" "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/ram00/ram0/source/packagediv00.vhdl" "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/ram00/ram0/source/topdiv00.vhdl" "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/projectLCD00/source"
+prj_src add "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/projectLCD00/source/div00.vhdl" "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/projectLCD00/source/osc00.vhdl" "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/projectLCD00/source/packagediv00.vhdl" "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/projectLCD00/source/topdiv00.vhdl"
+prj_project save
+prj_src add "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/lcdContConfig00.vhdl"
+prj_src add "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/LCDConfig00.vhdl"
+#Stop recording: 3/25/2019 11:49:59

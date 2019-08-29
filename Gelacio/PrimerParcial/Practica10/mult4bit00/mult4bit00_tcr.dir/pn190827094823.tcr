@@ -1,0 +1,22 @@
+#Start recording tcl command: 8/27/2019 08:47:02
+#Project Location: C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica10/mult4bit00; Project name: mult4bit00
+C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica9/adder4bitLib
+adder4bitLib00
+#Start recording tcl command: 8/27/2019 09:48:22
+#Project Location: C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica9/adder4bitLib; Project name: adder4bitLib00
+prj_project open "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica10/mult4bit00/mult4bit00.ldf"
+prj_run Export -impl mult4bit0 -task Jedecgen
+prj_run Export -impl mult4bit0 -task Jedecgen
+pgr_project save "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica10/mult4bit00/mult4bit0/mult4bit0.xcf"
+prj_src add -exclude "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica10/mult4bit00/mult4bit0/mult4bit0.xcf"
+prj_src enable "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica10/mult4bit00/mult4bit0/mult4bit0.xcf"
+pgr_program run
+prj_run Export -impl mult4bit0 -task Jedecgen
+prj_run Export -impl mult4bit0 -task Jedecgen
+pgr_program run
+pgr_project save "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica10/mult4bit00/mult4bit0/mult4bit0.xcf"
+prj_project save
+prj_project close
+prj_project new -name "adder4bitLib00" -impl "adder4bitLib0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+prj_project save
+#Stop recording: 8/27/2019 09:48:23

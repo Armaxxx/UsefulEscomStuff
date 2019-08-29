@@ -1,0 +1,2 @@
+@W: CD796 :"C:\Users\Mario\Desktop\Primer parcial\multiplicador4bit\topmult4bit00.vhdl":16:15:16:16|Bit 3 of signal s8 is undriven. Possible simulation mismatch as initial value or default value is ignored. To avoid simulation mismatches, explicitly drive this bit. 
+
