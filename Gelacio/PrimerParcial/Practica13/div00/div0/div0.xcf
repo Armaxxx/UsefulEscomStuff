@@ -19,9 +19,9 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica12/osc00/osc0/osc00_osc0.jed</File>
-			<FileTime>08/29/19 11:14:57</FileTime>
-			<JedecChecksum>0x3BF0</JedecChecksum>
+			<File>C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica13/div00/div0/div00_div0.jed</File>
+			<FileTime>09/02/19 11:53:07</FileTime>
+			<JedecChecksum>0xAD30</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
