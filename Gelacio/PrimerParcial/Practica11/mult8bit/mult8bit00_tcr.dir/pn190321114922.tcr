@@ -1,0 +1,12 @@
+#Start recording tcl command: 3/21/2019 10:47:57
+#Project Location: C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit; Project name: mult8bit00
+prj_project new -name "mult8bit00" -impl "mult8bit0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+prj_project save
+prj_src add "C:/Users/Mario/Downloads/mult8bit00.vhdl" "C:/Users/Mario/Downloads/packagemult8bit00.vhdl"
+prj_src remove "C:/Users/Mario/Downloads/packagemult8bit00.vhdl" "C:/Users/Mario/Downloads/mult8bit00.vhdl"
+prj_src add "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/mult8bit00.vhdl"
+prj_src add "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/packagemult8bit00.vhdl"
+prj_src add "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/and00.vhdl" "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/fa00.vhdl" "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/HA00.vhdl" "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/nxor00.vhdl" "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/or00.vhdl" "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/packagefa00.vhdl" "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/PackageHA00.vhdl" "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/xor00.vhdl"
+prj_src remove "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/nxor00.vhdl"
+prj_run Export -impl mult8bit0 -task Jedecgen
+#Stop recording: 3/21/2019 11:49:22

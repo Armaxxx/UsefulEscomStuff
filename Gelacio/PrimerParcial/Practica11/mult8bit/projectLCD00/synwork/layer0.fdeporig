@@ -1,0 +1,84 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\projectLCD00\\synwork\\lcd00_projectLCD00_comp.srs|-top|toplcd00|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\bin64\\c_vhdl.exe":1501910110
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\location.map":1501933408
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\std.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\std1164.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\numeric.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\arith.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\synpbase\\lib\\vhd\\hyperents.vhd":1501909424
+#CUR:"C:\\lscc\\diamond\\3.10_x64\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1493331104
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\projectLCD00\\source\\packagediv00.vhdl":1551114610
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\packagelcd00.vhdl":1553615447
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\projectLCD00\\source\\div00.vhdl":1551114590
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\projectLCD00\\source\\osc00.vhdl":1551114602
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\lcdContConfig00.vhdl":1553533518
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\LCDConfig00.vhdl":1554141129
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\lcdData00.vhdl":1553614170
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\lcdContData00.vhdl":1554140342
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\lcdMux00.vhdl":1553615123
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\projectLCD00\\source\\topdiv00.vhdl":1551114627
+#CUR:"C:\\Users\\Mario\\Desktop\\Semestre 9\\Arquitectura de Computadoras\\Practicas\\mult8bit\\toplcd00.vhdl":1554140553
+0 "C:\lscc\diamond\3.10_x64\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1 "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\projectLCD00\source\packagediv00.vhdl" vhdl
+2 "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\packagelcd00.vhdl" vhdl
+3 "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\projectLCD00\source\div00.vhdl" vhdl
+4 "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\projectLCD00\source\osc00.vhdl" vhdl
+5 "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\lcdContConfig00.vhdl" vhdl
+6 "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\LCDConfig00.vhdl" vhdl
+7 "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\lcdData00.vhdl" vhdl
+8 "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\lcdContData00.vhdl" vhdl
+9 "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\lcdMux00.vhdl" vhdl
+10 "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\projectLCD00\source\topdiv00.vhdl" vhdl
+11 "C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\toplcd00.vhdl" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 -1
+8 -1
+9 -1
+10 4 3 1 
+11 10 5 6 8 7 9 2 
+
+# Dependency Lists (Users Of)
+0 -1
+1 10 
+2 11 
+3 10 
+4 10 
+5 11 
+6 11 
+7 11 
+8 11 
+9 11 
+10 11 
+11 -1
+
+# Design Unit to File Association
+arch work div00 div0 3
+module work div00 3
+arch work osc00 osc0 4
+module work osc00 4
+arch work lcdcontconfig00 lcdcontconfig0 5
+module work lcdcontconfig00 5
+arch work lcdconfig00 lcdconfig0 6
+module work lcdconfig00 6
+arch work lcddata00 lcddata0 7
+module work lcddata00 7
+arch work lcdcontdata00 lcdcontdata0 8
+module work lcdcontdata00 8
+arch work lcdmux00 lcdmux0 9
+module work lcdmux00 9
+arch work topdiv00 topdiv0 10
+module work topdiv00 10
+arch work toplcd00 toplcd0 11
+module work toplcd00 11

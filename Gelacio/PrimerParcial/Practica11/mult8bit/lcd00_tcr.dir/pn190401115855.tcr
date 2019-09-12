@@ -1,0 +1,10 @@
+#Start recording tcl command: 4/1/2019 10:47:28
+#Project Location: C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit; Project name: lcd00
+prj_project open "C:/Users/Mario/Desktop/Semestre 9/Arquitectura de Computadoras/Practicas/mult8bit/lcd00.ldf"
+prj_run Export -impl projectLCD00 -task Jedecgen
+prj_run Export -impl projectLCD00 -task Jedecgen
+prj_run Export -impl projectLCD00 -task Jedecgen
+prj_run Export -impl projectLCD00 -task Jedecgen
+prj_run Export -impl projectLCD00 -task Jedecgen
+prj_run Export -impl projectLCD00 -task Jedecgen
+#Stop recording: 4/1/2019 11:58:55

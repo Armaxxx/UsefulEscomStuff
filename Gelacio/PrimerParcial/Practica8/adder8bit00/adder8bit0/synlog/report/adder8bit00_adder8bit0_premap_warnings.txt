@@ -1,0 +1,1 @@
+@W: BN124 :"c:\users\ariadna gracida\documents\arqui2020\1\adder8bit00\topadder8bit00.vhdl":127:1:127:5|Disconnecting duplicate driver pin:Ya inst:AD017 of work.and00(and0) on net So[1] (in view: work.topadder8bit00(topadder8bit0)). Duplication of drivers is frequently used in ASIC designs to increase drive strength. This form of duplication is not permitted in FPGA designs. 

@@ -1,0 +1,10 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: BN115 :"c:\users\mario\desktop\semestre 9\arquitectura de computadoras\practicas\mult8bit\ha00.vhdl":22:1:22:3|Removing instance H01 (in view: work.HA00_1_0(ha0)) of type view:work.and00_0_0(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\mario\desktop\semestre 9\arquitectura de computadoras\practicas\mult8bit\ha00.vhdl":22:1:22:3|Removing instance H01 (in view: work.HA00_1_13(ha0)) of type view:work.and00_0_14(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\mario\desktop\semestre 9\arquitectura de computadoras\practicas\mult8bit\ha00.vhdl":22:1:22:3|Removing instance H01 (in view: work.HA00_1_16(ha0)) of type view:work.and00_0_15(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\mario\desktop\semestre 9\arquitectura de computadoras\practicas\mult8bit\ha00.vhdl":22:1:22:3|Removing instance H01 (in view: work.HA00_1_32(ha0)) of type view:work.and00_0_31(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\mario\desktop\semestre 9\arquitectura de computadoras\practicas\mult8bit\ha00.vhdl":22:1:22:3|Removing instance H01 (in view: work.HA00_1_48(ha0)) of type view:work.and00_0_47(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\mario\desktop\semestre 9\arquitectura de computadoras\practicas\mult8bit\ha00.vhdl":22:1:22:3|Removing instance H01 (in view: work.HA00_1_64(ha0)) of type view:work.and00_0_63(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\mario\desktop\semestre 9\arquitectura de computadoras\practicas\mult8bit\ha00.vhdl":22:1:22:3|Removing instance H01 (in view: work.HA00_1_80(ha0)) of type view:work.and00_0_79(and0) because it does not drive other instances.
+@N: BN115 :"c:\users\mario\desktop\semestre 9\arquitectura de computadoras\practicas\mult8bit\ha00.vhdl":22:1:22:3|Removing instance H01 (in view: work.HA00_1_96(ha0)) of type view:work.and00_0_95(and0) because it does not drive other instances.

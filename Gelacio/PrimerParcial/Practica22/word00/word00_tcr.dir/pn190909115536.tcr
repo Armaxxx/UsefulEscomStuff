@@ -1,0 +1,11 @@
+#Start recording tcl command: 9/9/2019 11:09:06
+#Project Location: C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica22/word00; Project name: word00
+prj_project new -name "word00" -impl "word0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+file copy -force -- "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/div00VHDL/div00.vhdl" "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/div00VHDL/osc00.vhdl" "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/div00VHDL/packagediv00.vhdl" "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/div00VHDL/topdiv00.vhdl" "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica22/word00/word0/source"
+prj_src add "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica22/word00/word0/source/div00.vhdl" "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica22/word00/word0/source/osc00.vhdl" "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica22/word00/word0/source/packagediv00.vhdl" "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica22/word00/word0/source/topdiv00.vhdl"
+prj_project save
+prj_src add "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica22/word00/contring00.vhdl"
+prj_src add "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica22/word00/coder00.vhdl"
+prj_project save
+prj_project close
+#Stop recording: 9/9/2019 11:55:36

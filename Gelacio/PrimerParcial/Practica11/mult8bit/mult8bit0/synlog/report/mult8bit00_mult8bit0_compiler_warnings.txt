@@ -1,0 +1,2 @@
+@W: CD638 :"C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\mult8bit00.vhdl":17:85:17:88|Signal ss06 is undriven. Either assign the signal a value or remove the signal declaration.
+

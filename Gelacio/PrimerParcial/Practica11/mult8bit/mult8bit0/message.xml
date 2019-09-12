@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD638 :&quot;C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\mult8bit00.vhdl&quot;:17:85:17:88|Signal ss06 is undriven. Either assign the signal a value or remove the signal declaration.</Dynamic>
+            <Navigation>CD638</Navigation>
+            <Navigation>C:\Users\Mario\Desktop\Semestre 9\Arquitectura de Computadoras\Practicas\mult8bit\mult8bit00.vhdl</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>85</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>88</Navigation>
+            <Navigation>Signal ss06 is undriven. Either assign the signal a value or remove the signal declaration.</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>
