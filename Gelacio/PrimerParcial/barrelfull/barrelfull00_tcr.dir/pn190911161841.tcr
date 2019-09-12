@@ -1,0 +1,24 @@
+#Start recording tcl command: 9/10/2019 15:24:57
+#Project Location: C:/Users/Ariadna Gracida/Desktop/barrelfull; Project name: barrelfull00
+C:/Users/Ariadna Gracida/Documents/arqui2020/1/word00
+word00
+#Start recording tcl command: 9/11/2019 16:18:40
+#Project Location: C:/Users/Ariadna Gracida/Documents/arqui2020/1/word00; Project name: word00
+prj_project new -name "barrelfull00" -impl "barrelfull0" -dev LCMXO2-7000HE-5TG144C -synthesis "synplify"
+prj_src add "C:/Users/Ariadna Gracida/Desktop/shiftfull/shiftfull0/source/div00.vhdl" "C:/Users/Ariadna Gracida/Desktop/shiftfull/shiftfull0/source/osc00.vhdl" "C:/Users/Ariadna Gracida/Desktop/shiftfull/shiftfull0/source/pachageshiftRL00.vhdl" "C:/Users/Ariadna Gracida/Desktop/shiftfull/shiftfull0/source/packagediv00.vhdl" "C:/Users/Ariadna Gracida/Desktop/shiftfull/shiftfull0/source/shiftRL00.vhdl" "C:/Users/Ariadna Gracida/Desktop/shiftfull/shiftfull0/source/topdiv00.vhdl" "C:/Users/Ariadna Gracida/Desktop/shiftfull/shiftfull0/source/topshiftRL00.vhdl"
+prj_project save
+prj_run Export -impl barrelfull0 -task Jedecgen
+prj_run Export -impl barrelfull0 -task Jedecgen
+prj_run Export -impl barrelfull0 -task Jedecgen
+prj_run Export -impl barrelfull0 -task Jedecgen
+prj_run Export -impl barrelfull0 -task Jedecgen
+prj_run Export -impl barrelfull0 -task Jedecgen
+pgr_project save "C:/Users/Ariadna Gracida/Desktop/barrelfull/barrelfull0/barrelfull0.xcf"
+prj_src add -exclude "C:/Users/Ariadna Gracida/Desktop/barrelfull/barrelfull0/barrelfull0.xcf"
+prj_src enable "C:/Users/Ariadna Gracida/Desktop/barrelfull/barrelfull0/barrelfull0.xcf"
+pgr_program run
+pgr_project save "C:/Users/Ariadna Gracida/Desktop/barrelfull/barrelfull0/barrelfull0.xcf"
+prj_project save
+prj_project close
+prj_project open "C:/Users/Ariadna Gracida/Documents/arqui2020/1/word00/word00.ldf"
+#Stop recording: 9/11/2019 16:18:41

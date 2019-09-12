@@ -1,0 +1,7 @@
+#Start recording tcl command: 8/29/2019 11:52:21
+#Project Location: C:/Users/Ariadna Gracida/Documents/arqui2020/1/adder8bit00; Project name: adder8bit00
+prj_project open "C:/Users/Ariadna Gracida/Documents/arqui2020/1/adder8bit00/adder8bit00.ldf"
+pgr_project open "C:/Users/Ariadna Gracida/Documents/arqui2020/1/adder8bit00/adder8bit0/adder8bit0.xcf"
+pgr_program run
+prj_project close
+#Stop recording: 9/2/2019 11:36:29

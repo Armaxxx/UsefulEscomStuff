@@ -1,0 +1,21 @@
+#Start recording tcl command: 8/27/2019 00:10:52
+#Project Location: C:/Users/Ariadna Gracida/Documents/arqui2020/1/adder8bit00; Project name: adder8bit00
+C:/Users/Ariadna Gracida/Documents/arqui2020/1/adder4bit00
+adder4bit00
+#Start recording tcl command: 8/27/2019 00:49:10
+#Project Location: C:/Users/Ariadna Gracida/Documents/arqui2020/1/adder4bit00; Project name: adder4bit00
+prj_project open "C:/Users/Ariadna Gracida/Documents/arqui2020/1/adder8bit00/adder8bit00.ldf"
+prj_run Synthesis -impl adder8bit0
+prj_run Map -impl adder8bit0
+prj_run Map -impl adder8bit0
+prj_run Export -impl adder8bit0 -task Jedecgen
+prj_run Export -impl adder8bit0 -task Jedecgen
+pgr_project save "C:/Users/Ariadna Gracida/Documents/arqui2020/1/adder8bit00/adder8bit0/adder8bit0.xcf"
+prj_src add -exclude "C:/Users/Ariadna Gracida/Documents/arqui2020/1/adder8bit00/adder8bit0/adder8bit0.xcf"
+prj_src enable "C:/Users/Ariadna Gracida/Documents/arqui2020/1/adder8bit00/adder8bit0/adder8bit0.xcf"
+pgr_program run
+pgr_project save "C:/Users/Ariadna Gracida/Documents/arqui2020/1/adder8bit00/adder8bit0/adder8bit0.xcf"
+prj_project save
+prj_project close
+prj_project open "C:/Users/Ariadna Gracida/Documents/arqui2020/1/adder4bit00/adder4bit00.ldf"
+#Stop recording: 8/27/2019 00:49:11

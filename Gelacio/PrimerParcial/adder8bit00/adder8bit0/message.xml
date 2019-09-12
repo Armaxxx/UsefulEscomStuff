@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN124 :&quot;c:\users\ariadna gracida\documents\arqui2020\1\adder8bit00\topadder8bit00.vhdl&quot;:127:1:127:5|Disconnecting duplicate driver pin:Ya inst:AD017 of work.and00(and0) on net So[1] (in view: work.topadder8bit00(topadder8bit0)). Duplication of drivers is frequently used in ASIC designs to increase drive strength. This form of duplication is not permitted in FPGA designs.</Dynamic>
+            <Navigation>BN124</Navigation>
+            <Navigation>c:\users\ariadna gracida\documents\arqui2020\1\adder8bit00\topadder8bit00.vhdl</Navigation>
+            <Navigation>127</Navigation>
+            <Navigation>1</Navigation>
+            <Navigation>127</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Disconnecting duplicate driver pin:Ya inst:AD017 of work.and00(and0) on net So[1] (in view: work.topadder8bit00(topadder8bit0)). Duplication of drivers is frequently used in ASIC designs to increase drive strength. This form of duplication is not permitted in FPGA designs. </Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

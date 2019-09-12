@@ -1,0 +1,82 @@
+----------------------------------------------------------------------
+Report for cell topshiftRL00.topshiftrl0
+
+Register bits: 43 of 6864 (1%)
+PIC Latch:       0
+I/O cells:       29
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       12       100.0
+                            FD1P3AX       12       100.0
+                            FD1S3AX        1       100.0
+                            FD1S3IX       22       100.0
+                                GSR        1       100.0
+                                 IB       20       100.0
+                                 OB        9       100.0
+                           OFS1P3IX        8       100.0
+                           ORCALUT4       68       100.0
+                               OSCH        1       100.0
+                              PFUMX        1       100.0
+                                PUR        1       100.0
+                                VHI        5       100.0
+                                VLO        5       100.0
+SUB MODULES 
+                              div00        1       100.0
+                              osc00        1       100.0
+                          shiftRL00        1       100.0
+                           topdiv00        1       100.0
+                            
+                         TOTAL           170           
+----------------------------------------------------------------------
+Report for cell shiftRL00.netlist
+     Instance path:  SR01
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3AX       12       100.0
+                           ORCALUT4       25        36.8
+                                VHI        1        20.0
+                                VLO        1        20.0
+                            
+                         TOTAL            39           
+----------------------------------------------------------------------
+Report for cell topdiv00.netlist
+     Instance path:  SR00
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       12       100.0
+                            FD1S3AX        1       100.0
+                            FD1S3IX       22       100.0
+                           ORCALUT4       43        63.2
+                               OSCH        1       100.0
+                              PFUMX        1       100.0
+                                VHI        3        60.0
+                                VLO        3        60.0
+SUB MODULES 
+                              div00        1       100.0
+                              osc00        1       100.0
+                            
+                         TOTAL            88           
+----------------------------------------------------------------------
+Report for cell div00.netlist
+     Instance path:  SR00.D01
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       12       100.0
+                            FD1S3AX        1       100.0
+                            FD1S3IX       22       100.0
+                           ORCALUT4       43        63.2
+                              PFUMX        1       100.0
+                                VHI        1        20.0
+                                VLO        1        20.0
+                            
+                         TOTAL            81           
+----------------------------------------------------------------------
+Report for cell osc00.netlist
+     Instance path:  SR00.D00
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                               OSCH        1       100.0
+                                VHI        1        20.0
+                                VLO        1        20.0
+                            
+                         TOTAL             3           
