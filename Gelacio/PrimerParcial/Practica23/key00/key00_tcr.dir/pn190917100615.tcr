@@ -1,0 +1,6 @@
+#Start recording tcl command: 9/17/2019 09:05:33
+#Project Location: C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica23/key00; Project name: key00
+prj_project open "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica23/key00/key00.ldf"
+prj_src add "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica23/key00/contring00.vhdl"
+prj_src add "C:/Users/Mario/Desktop/Semestre 10/Arquitectura de Computadoras/Practicas/PrimerParcial/Practica23/key00/coder00.vhdl"
+#Stop recording: 9/17/2019 10:06:15
