@@ -1,0 +1,2 @@
+@E: CD326 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\topLCD00.vhdl":48:1:48:4|Port inflagcc of entity work.contconfiglcd00 is unconnected. If a port needs to remain unconnected, use the keyword open.
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="lcd00" device="LCMXO2-7000HE-5TG144C" default_implementation="lcd00">
+    <Options/>
+    <Implementation title="lcd00" dir="lcd00" description="lcd00" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="muxLCD00"/>
+        <Source name="../../1/div00/div00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../../1/div00/osc00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../../1/div00/packagediv00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="../../1/div00/topdiv00.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="topdiv00"/>
+        </Source>
+        <Source name="contconfigLCD00.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="contconfigLCD00"/>
+        </Source>
+        <Source name="configLCD00.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="configLCD00"/>
+        </Source>
+        <Source name="contdataLCD00.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="contdataLCD00"/>
+        </Source>
+        <Source name="dataLCD00.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="dataLCD00"/>
+        </Source>
+        <Source name="muxLCD00.vhdl" type="VHDL" type_short="VHDL">
+            <Options top_module="muxLCD00"/>
+        </Source>
+        <Source name="packageLCD00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="topLCD00.vhdl" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="lcd00.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="lcd001.sty"/>
+</BaliProject>
