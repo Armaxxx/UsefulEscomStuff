@@ -1,0 +1,80 @@
+Synopsys HDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.10_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\topLCD00.vhdl":10:7:10:14|Top entity is set to topLCD00.
+Options changed - recompiling
+VHDL syntax check successful!
+Options changed - recompiling
+@N: CD630 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\topLCD00.vhdl":10:7:10:14|Synthesizing work.toplcd00.toplcd0.
+@N: CD630 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\muxLCD00.vhdl":10:7:10:14|Synthesizing work.muxlcd00.muxlcd0.
+Post processing for work.muxlcd00.muxlcd0
+@N: CD630 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\dataLCD00.vhdl":8:7:8:15|Synthesizing work.datalcd00.datalcd0.
+Post processing for work.datalcd00.datalcd0
+@N: CL189 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\dataLCD00.vhdl":39:2:39:3|Register bit outchar(7) is always 0.
+@W: CL260 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\dataLCD00.vhdl":39:2:39:3|Pruning register bit 7 of outchar(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CD630 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\contdataLCD00.vhdl":8:7:8:19|Synthesizing work.contdatalcd00.contdatalcd0.
+@N: CD364 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\contdataLCD00.vhdl":46:7:46:15|Removing redundant assignment.
+Post processing for work.contdatalcd00.contdatalcd0
+@N: CD630 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\configLCD00.vhdl":7:7:7:17|Synthesizing work.configlcd00.configlcd0.
+Post processing for work.configlcd00.configlcd0
+@N: CD630 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\contconfigLCD00.vhdl":8:7:8:21|Synthesizing work.contconfiglcd00.contconfiglcd0.
+@N: CD364 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\contconfigLCD00.vhdl":33:6:33:10|Removing redundant assignment.
+Post processing for work.contconfiglcd00.contconfiglcd0
+@N: CD630 :"C:\Users\Ariadna Gracida\Documents\arqui2020\1\div00\topdiv00.vhdl":7:7:7:14|Synthesizing work.topdiv00.topdiv0.
+@N: CD630 :"C:\Users\Ariadna Gracida\Documents\arqui2020\1\div00\div00.vhdl":8:7:8:11|Synthesizing work.div00.div0.
+Post processing for work.div00.div0
+@N: CD630 :"C:\Users\Ariadna Gracida\Documents\arqui2020\1\div00\osc00.vhdl":6:7:6:11|Synthesizing work.osc00.osc0.
+@W: CD326 :"C:\Users\Ariadna Gracida\Documents\arqui2020\1\div00\osc00.vhdl":21:0:21:7|Port sedstdby of entity work.osch is unconnected. If a port needs to remain unconnected, use the keyword open.
+@N: CD630 :"C:\lscc\diamond\3.10_x64\cae_library\synthesis\vhdl\machxo2.vhd":2291:10:2291:13|Synthesizing work.osch.syn_black_box.
+Post processing for work.osch.syn_black_box
+Post processing for work.osc00.osc0
+Post processing for work.topdiv00.topdiv0
+Post processing for work.toplcd00.toplcd0
+@W: CL240 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\topLCD00.vhdl":25:2:25:10|Signal outRWLED0 is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\topLCD00.vhdl":23:2:23:10|Signal outRSLCD0 is floating; a simulation mismatch is possible.
+@W: CL138 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\configLCD00.vhdl":27:2:27:3|Removing register 'RScf' because it is only assigned 0 or its original value.
+@W: CL138 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\configLCD00.vhdl":27:2:27:3|Removing register 'RWcf' because it is only assigned 0 or its original value.
+@N: CL189 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\configLCD00.vhdl":27:2:27:3|Register bit commandcf(6) is always 0.
+@N: CL189 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\configLCD00.vhdl":27:2:27:3|Register bit commandcf(7) is always 0.
+@W: CL279 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\configLCD00.vhdl":27:2:27:3|Pruning register bits 7 to 6 of commandcf(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL138 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\contdataLCD00.vhdl":27:2:27:3|Removing register 'RWcd' because it is only assigned 0 or its original value.
+@N: CL189 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\contdataLCD00.vhdl":27:2:27:3|Register bit RScd is always 1.
+@N: CL159 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\dataLCD00.vhdl":13:2:13:10|Input inFlagcfd is unused.
+@N: CL159 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\muxLCD00.vhdl":14:1:14:9|Input inFlagcdm is unused.
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 79MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Oct 24 11:33:44 2019
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+File C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\lcd00\synwork\layer0.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Oct 24 11:33:44 2019
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Oct 24 11:33:44 2019
+
+###########################################################]

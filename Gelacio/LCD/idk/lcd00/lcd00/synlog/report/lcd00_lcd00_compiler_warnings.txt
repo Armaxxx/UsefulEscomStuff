@@ -1,0 +1,9 @@
+@W: CL260 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\dataLCD00.vhdl":39:2:39:3|Pruning register bit 7 of outchar(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CD326 :"C:\Users\Ariadna Gracida\Documents\arqui2020\1\div00\osc00.vhdl":21:0:21:7|Port sedstdby of entity work.osch is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CL240 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\topLCD00.vhdl":25:2:25:10|Signal outRWLED0 is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\topLCD00.vhdl":23:2:23:10|Signal outRSLCD0 is floating; a simulation mismatch is possible.
+@W: CL138 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\configLCD00.vhdl":27:2:27:3|Removing register 'RScf' because it is only assigned 0 or its original value.
+@W: CL138 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\configLCD00.vhdl":27:2:27:3|Removing register 'RWcf' because it is only assigned 0 or its original value.
+@W: CL279 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\configLCD00.vhdl":27:2:27:3|Pruning register bits 7 to 6 of commandcf(7 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL138 :"C:\Users\Ariadna Gracida\Documents\arqui2020\2\lcd00\contdataLCD00.vhdl":27:2:27:3|Removing register 'RWcd' because it is only assigned 0 or its original value.
+
